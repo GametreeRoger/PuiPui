@@ -17,13 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BBR-5r-0aH">
-                                <rect key="frame" x="20" y="99" width="354" height="354"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <imageReference key="image" image="故事大綱"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Z7p-tG-shh">
-                                <rect key="frame" x="16" y="471" width="358" height="281"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Z7p-tG-shh">
+                                <rect key="frame" x="16" y="493" width="358" height="259"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">舞台為天竺鼠變成車的世界。
@@ -34,9 +29,19 @@
 
 渴望新動畫表現的登場的動畫迷們、無論男女老少皆能樂在其中的作品就此誕生。一定要看看唷！</string>
                                 <color key="textColor" name="TextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BBR-5r-0aH">
+                                <rect key="frame" x="28" y="129" width="334" height="334"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <imageReference key="image" image="故事大綱"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="AccentColor"/>
@@ -51,7 +56,7 @@
         <scene sceneID="s6K-Eq-lfu">
             <objects>
                 <tableViewController id="HOl-hE-srw" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="-1" id="U6m-y7-NO1">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="-1" id="U6m-y7-NO1">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="AccentColor"/>
@@ -342,7 +347,7 @@
                                 <string key="text">雖然個性隨和，但偶爾也會無視駕駛的指示。遇見需要幫忙的人就會挺身而出。喜歡吃胡蘿蔔。
 原型為導演見里朝希的姐姐所飼養的天竺鼠。</string>
                                 <color key="textColor" name="TextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -359,7 +364,7 @@
         <scene sceneID="HI3-qg-Pp6">
             <objects>
                 <tableViewController id="Wfb-09-BvA" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="-1" id="HuY-r0-0jK">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="-1" id="HuY-r0-0jK">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="AccentColor"/>
@@ -735,6 +740,12 @@
                             <fontDescription key="fontDescription" type="system" pointSize="36"/>
                             <color key="textColor" name="TextColor"/>
                         </textAttributes>
+                        <navigationBarAppearance key="standardAppearance">
+                            <textAttributes key="titleTextAttributes">
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" name="TextColor"/>
+                            </textAttributes>
+                        </navigationBarAppearance>
                         <navigationBarAppearance key="scrollEdgeAppearance">
                             <textAttributes key="titleTextAttributes">
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -868,7 +879,7 @@
                                 <string key="text">總之就是什麼都很愛吃、也很愛動。脫線的個性讓牠從來不會感到害怕。
 經常做出令人意想不到的事，是個總是害大家嚇一跳的麻煩製造者。</string>
                                 <color key="textColor" name="TextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -901,7 +912,7 @@
                                 <string key="text">行為優雅又端莊，卻有著意想不到的強大身體能力。
 喜歡把自己打扮得漂漂亮亮、也很關注流行趨勢，夢想能成為世界第一的高級天竺鼠車車。</string>
                                 <color key="textColor" name="TextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -935,7 +946,7 @@
 相較於其他天竺鼠車車更有自尊心，很害怕貓。
 第10話撕去新手駕駛標誌並被噴成附有動畫角色的「痛車」。第12話變回原貌。</string>
                                 <color key="textColor" name="TextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -970,7 +981,7 @@
 喜歡吃生菜。
 第6話因被殭屍咬到而變成殭屍樣貌，但第10話變回原貌。</string>
                                 <color key="textColor" name="TextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
