@@ -6,7 +6,6 @@
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -34,7 +33,7 @@
 黑溜溜的眼睛與圓圓的屁屁、短手短腳的小碎步，總是一臉呆呆地跑來跑去的天竺鼠車車。就算遇到塞車，只要看著前車的屁屁也足夠療癒人心、稍微犯了小錯也因為毛茸茸又可愛不小心就原諒他們了？！
 
 渴望新動畫表現的登場的動畫迷們、無論男女老少皆能樂在其中的作品就此誕生。一定要看看唷！</string>
-                                <color key="textColor" systemColor="labelColor"/>
+                                <color key="textColor" name="TextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -60,15 +59,15 @@
                         <sections>
                             <tableViewSection id="z3h-w4-GU6">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="155" id="I2R-sb-6fs">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="155" id="I2R-sb-6fs">
                                         <rect key="frame" x="0.0" y="50" width="390" height="155"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="I2R-sb-6fs" id="h1h-Yf-AJY">
-                                            <rect key="frame" x="0.0" y="0.0" width="359" height="155"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="155"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K1o-en-tdb">
-                                                    <rect key="frame" x="20" y="0.0" width="320" height="150"/>
+                                                    <rect key="frame" x="20" y="0.0" width="350" height="150"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aYh-4S-wdR">
@@ -85,11 +84,22 @@
                                                             <rect key="frame" x="159" y="61" width="73" height="29"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                                            <color key="textColor" red="0.95847052340000005" green="0.48442375659999998" blue="0.25734168289999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="textColor" name="TextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lLm-L5-gWF">
+                                                            <rect key="frame" x="322" y="61.999999999999545" width="20" height="28"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="tintColor" name="TextColor"/>
+                                                            <imageReference key="image" image="chevron.right" catalog="system"/>
+                                                        </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" red="1" green="0.90588235294117647" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -99,15 +109,15 @@
                                             <segue destination="VLF-9Z-Lpb" kind="show" id="eqx-2c-GQA"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="155" id="KEh-fU-NTX">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="155" id="KEh-fU-NTX">
                                         <rect key="frame" x="0.0" y="205" width="390" height="155"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KEh-fU-NTX" id="IaM-3x-wj9">
-                                            <rect key="frame" x="0.0" y="0.0" width="359" height="155"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="155"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lJT-rK-LbC">
-                                                    <rect key="frame" x="20" y="0.0" width="320" height="150"/>
+                                                    <rect key="frame" x="20" y="0.0" width="350" height="150"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gHk-pf-Ie3">
@@ -124,11 +134,22 @@
                                                             <rect key="frame" x="159" y="61" width="73" height="29"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                                            <color key="textColor" red="0.95847052340000005" green="0.48442375659999998" blue="0.25734168289999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="textColor" name="TextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E0q-dU-359">
+                                                            <rect key="frame" x="322" y="62" width="20" height="28"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="tintColor" name="TextColor"/>
+                                                            <imageReference key="image" image="chevron.right" catalog="system"/>
+                                                        </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" red="1" green="0.90588235294117647" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -138,15 +159,15 @@
                                             <segue destination="lXs-w9-H3Y" kind="show" id="uPC-XD-gGU"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="155" id="2ZB-Ct-nzs">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="155" id="2ZB-Ct-nzs">
                                         <rect key="frame" x="0.0" y="360" width="390" height="155"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2ZB-Ct-nzs" id="xPE-d8-zaz">
-                                            <rect key="frame" x="0.0" y="0.0" width="359" height="155"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="155"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IfN-sP-Xaf">
-                                                    <rect key="frame" x="20" y="0.0" width="320" height="150"/>
+                                                    <rect key="frame" x="20" y="0.0" width="350" height="150"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YkD-gw-5kS">
@@ -163,11 +184,22 @@
                                                             <rect key="frame" x="159" y="61" width="49" height="29"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                                            <color key="textColor" red="0.95847052340000005" green="0.48442375659999998" blue="0.25734168289999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="textColor" name="TextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eAy-Ik-WZs">
+                                                            <rect key="frame" x="322" y="62" width="20" height="28"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="tintColor" name="TextColor"/>
+                                                            <imageReference key="image" image="chevron.right" catalog="system"/>
+                                                        </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" red="1" green="0.90588235294117647" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -177,15 +209,15 @@
                                             <segue destination="yVB-Y4-ImJ" kind="show" id="UFx-KA-QiV"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="155" id="vHj-rH-bHT">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="155" id="vHj-rH-bHT">
                                         <rect key="frame" x="0.0" y="515" width="390" height="155"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vHj-rH-bHT" id="2UZ-la-FwK">
-                                            <rect key="frame" x="0.0" y="0.0" width="359" height="155"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="155"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SWO-1y-gCK">
-                                                    <rect key="frame" x="20" y="0.0" width="320" height="150"/>
+                                                    <rect key="frame" x="20" y="0.0" width="350" height="150"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IOM-oV-tFF">
@@ -202,11 +234,22 @@
                                                             <rect key="frame" x="159" y="61" width="73" height="29"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                                            <color key="textColor" red="0.95847052340000005" green="0.48442375659999998" blue="0.25734168289999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="textColor" name="TextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qkC-4K-WIC">
+                                                            <rect key="frame" x="322" y="62" width="20" height="28"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="tintColor" name="TextColor"/>
+                                                            <imageReference key="image" image="chevron.right" catalog="system"/>
+                                                        </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" red="1" green="0.90588235294117647" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -216,15 +259,15 @@
                                             <segue destination="LpD-48-bP8" kind="show" id="blq-NX-ioC"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="155" id="3pX-bc-i6Q">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="155" id="3pX-bc-i6Q">
                                         <rect key="frame" x="0.0" y="670" width="390" height="155"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3pX-bc-i6Q" id="CWe-Ae-7dW">
-                                            <rect key="frame" x="0.0" y="0.0" width="359" height="155"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="155"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mbj-0L-wZO">
-                                                    <rect key="frame" x="20" y="0.0" width="320" height="150"/>
+                                                    <rect key="frame" x="20" y="0.0" width="350" height="150"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="55Y-iu-YVs">
@@ -241,11 +284,22 @@
                                                             <rect key="frame" x="159" y="61" width="49" height="29"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                                            <color key="textColor" red="0.95847052340000005" green="0.48442375659999998" blue="0.25734168289999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="textColor" name="TextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xRA-WA-c3a">
+                                                            <rect key="frame" x="322" y="62" width="20" height="28"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="tintColor" name="TextColor"/>
+                                                            <imageReference key="image" image="chevron.right" catalog="system"/>
+                                                        </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" red="1" green="0.90588235294117647" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -287,7 +341,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">雖然個性隨和，但偶爾也會無視駕駛的指示。遇見需要幫忙的人就會挺身而出。喜歡吃胡蘿蔔。
 原型為導演見里朝希的姐姐所飼養的天竺鼠。</string>
-                                <color key="textColor" red="0.95525223020000005" green="0.48438614610000003" blue="0.25749248270000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" name="TextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -328,8 +382,8 @@
                                                     <rect key="frame" x="161" y="11" width="209" height="78"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="tintColor" red="0.95686274510000002" green="0.44928640130000003" blue="0.20652908089999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="textColor" red="0.9703003764" green="0.38952374639999998" blue="0.058111303900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" name="TextColor"/>
+                                                    <color key="textColor" name="TextColor"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     <dataDetectorType key="dataDetectorTypes" link="YES"/>
@@ -354,8 +408,8 @@
                                                     <rect key="frame" x="161" y="11" width="209" height="78"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="tintColor" red="0.95686274510000002" green="0.44928640130000003" blue="0.20652908089999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="textColor" red="0.9703003764" green="0.38952374639999998" blue="0.058111303900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" name="TextColor"/>
+                                                    <color key="textColor" name="TextColor"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     <dataDetectorType key="dataDetectorTypes" link="YES"/>
@@ -380,8 +434,8 @@
                                                     <rect key="frame" x="161" y="11" width="209" height="78"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="tintColor" red="0.95686274510000002" green="0.44928640130000003" blue="0.20652908089999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="textColor" red="0.9703003764" green="0.38952374639999998" blue="0.058111303900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" name="TextColor"/>
+                                                    <color key="textColor" name="TextColor"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     <dataDetectorType key="dataDetectorTypes" link="YES"/>
@@ -406,8 +460,8 @@
                                                     <rect key="frame" x="161" y="11" width="209" height="78"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="tintColor" red="0.95686274510000002" green="0.44928640130000003" blue="0.20652908089999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="textColor" red="0.9703003764" green="0.38952374639999998" blue="0.058111303900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" name="TextColor"/>
+                                                    <color key="textColor" name="TextColor"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     <dataDetectorType key="dataDetectorTypes" link="YES"/>
@@ -432,8 +486,8 @@
                                                     <rect key="frame" x="161" y="11" width="209" height="78"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="tintColor" red="0.95686274510000002" green="0.44928640130000003" blue="0.20652908089999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="textColor" red="0.9703003764" green="0.38952374639999998" blue="0.058111303900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" name="TextColor"/>
+                                                    <color key="textColor" name="TextColor"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     <dataDetectorType key="dataDetectorTypes" link="YES"/>
@@ -458,8 +512,8 @@
                                                     <rect key="frame" x="161" y="11" width="209" height="78"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="tintColor" red="0.95686274510000002" green="0.44928640130000003" blue="0.20652908089999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="textColor" red="0.9703003764" green="0.38952374639999998" blue="0.058111303900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" name="TextColor"/>
+                                                    <color key="textColor" name="TextColor"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     <dataDetectorType key="dataDetectorTypes" link="YES"/>
@@ -484,8 +538,8 @@
                                                     <rect key="frame" x="161" y="11" width="209" height="78"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="tintColor" red="0.95686274510000002" green="0.44928640130000003" blue="0.20652908089999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="textColor" red="0.9703003764" green="0.38952374639999998" blue="0.058111303900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" name="TextColor"/>
+                                                    <color key="textColor" name="TextColor"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     <dataDetectorType key="dataDetectorTypes" link="YES"/>
@@ -510,8 +564,8 @@
                                                     <rect key="frame" x="161" y="11" width="209" height="78"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="tintColor" red="0.95686274510000002" green="0.44928640130000003" blue="0.20652908089999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="textColor" red="0.9703003764" green="0.38952374639999998" blue="0.058111303900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" name="TextColor"/>
+                                                    <color key="textColor" name="TextColor"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     <dataDetectorType key="dataDetectorTypes" link="YES"/>
@@ -536,8 +590,8 @@
                                                     <rect key="frame" x="161" y="11" width="209" height="78"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="tintColor" red="0.95686274510000002" green="0.44928640130000003" blue="0.20652908089999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="textColor" red="0.9703003764" green="0.38952374639999998" blue="0.058111303900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" name="TextColor"/>
+                                                    <color key="textColor" name="TextColor"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     <dataDetectorType key="dataDetectorTypes" link="YES"/>
@@ -562,8 +616,8 @@
                                                     <rect key="frame" x="161" y="11" width="209" height="78"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="tintColor" red="0.95686274510000002" green="0.44928640130000003" blue="0.20652908089999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="textColor" red="0.9703003764" green="0.38952374639999998" blue="0.058111303900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" name="TextColor"/>
+                                                    <color key="textColor" name="TextColor"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     <dataDetectorType key="dataDetectorTypes" link="YES"/>
@@ -588,8 +642,8 @@
                                                     <rect key="frame" x="161" y="11" width="209" height="78"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="tintColor" red="0.95686274510000002" green="0.44928640130000003" blue="0.20652908089999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="textColor" red="0.9703003764" green="0.38952374639999998" blue="0.058111303900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" name="TextColor"/>
+                                                    <color key="textColor" name="TextColor"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     <dataDetectorType key="dataDetectorTypes" link="YES"/>
@@ -647,7 +701,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" red="0.95716506239999999" green="0.44928640130000003" blue="0.20652908089999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" name="TextColor"/>
                         <tabBarAppearance key="scrollEdgeAppearance"/>
                     </tabBar>
                     <connections>
@@ -673,18 +727,18 @@
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                            <color key="textColor" red="0.95716506239999999" green="0.44928640130000003" blue="0.20652908089999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <color key="textColor" name="TextColor"/>
                             <color key="textShadowColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                            <color key="textColor" red="0.95716506239999999" green="0.44928640130000003" blue="0.20652908089999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textColor" name="TextColor"/>
                         </textAttributes>
                         <navigationBarAppearance key="scrollEdgeAppearance">
                             <textAttributes key="titleTextAttributes">
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" red="0.95686274509803915" green="0.45098039215686275" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" name="TextColor"/>
                                 <color key="textShadowColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </textAttributes>
                         </navigationBarAppearance>
@@ -713,13 +767,13 @@
                         <navigationBarAppearance key="standardAppearance">
                             <textAttributes key="titleTextAttributes">
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" red="0.95686274510000002" green="0.44928640130000003" blue="0.20652908089999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" name="TextColor"/>
                             </textAttributes>
                         </navigationBarAppearance>
                         <navigationBarAppearance key="scrollEdgeAppearance">
                             <textAttributes key="titleTextAttributes">
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" red="0.95716506239999999" green="0.44928640130000003" blue="0.20652908089999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" name="TextColor"/>
                             </textAttributes>
                         </navigationBarAppearance>
                     </navigationBar>
@@ -746,19 +800,44 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                            <color key="textColor" red="0.95686274509803915" green="0.45098039215686275" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textColor" name="TextColor"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                            <color key="textColor" red="0.95686274509803915" green="0.45098039215686275" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textColor" name="TextColor"/>
                         </textAttributes>
                         <navigationBarAppearance key="standardAppearance">
                             <textAttributes key="titleTextAttributes">
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" red="0.95525223020000005" green="0.48438614610000003" blue="0.25749248270000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" name="TextColor"/>
                             </textAttributes>
+                            <barButtonItemAppearance key="backButtonAppearance">
+                                <barButtonItemStateAppearance key="normal">
+                                    <textAttributes key="titleTextAttributes">
+                                        <color key="textColor" name="TextColor"/>
+                                    </textAttributes>
+                                </barButtonItemStateAppearance>
+                                <barButtonItemStateAppearance key="highlighted"/>
+                                <barButtonItemStateAppearance key="disabled"/>
+                                <barButtonItemStateAppearance key="focused"/>
+                            </barButtonItemAppearance>
                         </navigationBarAppearance>
-                        <navigationBarAppearance key="scrollEdgeAppearance"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance">
+                            <textAttributes key="titleTextAttributes">
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" name="TextColor"/>
+                            </textAttributes>
+                            <barButtonItemAppearance key="backButtonAppearance">
+                                <barButtonItemStateAppearance key="normal">
+                                    <textAttributes key="titleTextAttributes">
+                                        <color key="textColor" name="TextColor"/>
+                                    </textAttributes>
+                                </barButtonItemStateAppearance>
+                                <barButtonItemStateAppearance key="highlighted"/>
+                                <barButtonItemStateAppearance key="disabled"/>
+                                <barButtonItemStateAppearance key="focused"/>
+                            </barButtonItemAppearance>
+                        </navigationBarAppearance>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -788,7 +867,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">總之就是什麼都很愛吃、也很愛動。脫線的個性讓牠從來不會感到害怕。
 經常做出令人意想不到的事，是個總是害大家嚇一跳的麻煩製造者。</string>
-                                <color key="textColor" red="0.95525223020000005" green="0.48438614610000003" blue="0.25749248270000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" name="TextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -821,7 +900,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">行為優雅又端莊，卻有著意想不到的強大身體能力。
 喜歡把自己打扮得漂漂亮亮、也很關注流行趨勢，夢想能成為世界第一的高級天竺鼠車車。</string>
-                                <color key="textColor" red="0.95525223020000005" green="0.48438614610000003" blue="0.25749248270000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" name="TextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -855,7 +934,7 @@
                                 <string key="text">既認真又富有好奇心，雖然身上貼著新手駕駛標誌，但總是期待著畢業的那天。
 相較於其他天竺鼠車車更有自尊心，很害怕貓。
 第10話撕去新手駕駛標誌並被噴成附有動畫角色的「痛車」。第12話變回原貌。</string>
-                                <color key="textColor" red="0.95525223020000005" green="0.48438614610000003" blue="0.25749248270000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" name="TextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -890,7 +969,7 @@
 喜歡對著溫柔的駕駛撒嬌，但也時常被捲入麻煩事中，十分崇拜如同大姊姊般的泰迪。
 喜歡吃生菜。
 第6話因被殭屍咬到而變成殭屍樣貌，但第10話變回原貌。</string>
-                                <color key="textColor" red="0.95525223020000005" green="0.48438614610000003" blue="0.25749248270000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" name="TextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -916,6 +995,7 @@
         <image name="card-chara-3" width="280" height="284"/>
         <image name="card-chara-4" width="280" height="284"/>
         <image name="card-chara-5" width="280" height="284"/>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="outline_recent_actors_black_36pt" width="36" height="36"/>
         <image name="outline_recent_actors_white_36pt" width="36" height="36"/>
         <image name="outline_subtitles_black_36pt" width="36" height="36"/>
@@ -938,8 +1018,8 @@
         <namedColor name="AccentColor">
             <color red="0.98799997568130493" green="0.82300001382827759" blue="0.21400000154972076" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="TextColor">
+            <color red="0.95686274509803915" green="0.48627450980392156" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
